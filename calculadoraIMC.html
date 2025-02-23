@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <script src="calculadoraimc.js"></script>
+    <link rel="stylesheet" href="calcular.css">
+</head>
+<body>
+    <header>
+        <h1> Calculadora de IMC </h1>
+    </header>
+    <section class="calc-imc">
+        <form class="form" id="form">
+            <label for="Peso">Peso (kg):</label>
+            <input type="number" id="Peso">
+
+            <label for="Altura">Altura (m):</label>
+            <input type="number" id="Altura">
+            <p id="resultado"></p>
+            
+            <button onclick="calcularIMC()">Calcular</button>
+        </form>
+        <h2> Classificação de Peso pelo IMC para Adultos</h2>
+        <p> Menor que 18,5  =   Baixo Peso</p>
+        <p> Entre 18,5 e 24,9  =   Peso normal</p>
+        <p> Entre 25 e 29,9  =   Excesso de Peso</p>
+        <p> Entre 30 e 34,9  =  Obesidade classe 1 </p>
+        <p> Entre 35 e 39,9  =  Obesidade classe 2 </p>
+        <p> Acima de 40  =  Obesidade classe 3 </p>
+    </section> 
+</body>
+</html>
